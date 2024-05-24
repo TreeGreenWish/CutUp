@@ -1,5 +1,8 @@
 import random
 
+
+#First Commit on Github
+
 def cut_up_machine(*stories):
     sentences = []
     for story in stories:
