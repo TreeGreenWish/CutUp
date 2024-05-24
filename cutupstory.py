@@ -1,6 +1,6 @@
 import random
 
-
+#Sexy Comments
 #First Commit on Github
 
 def cut_up_machine(*stories):
