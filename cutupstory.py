@@ -1,18 +1,28 @@
 import random
-
-#Sexy Comments
-#First Commit on Github
-
-def cut_up_machine(*stories):
+    
+def cut_up_machine():
+    stories = []
+    num_stories = 3
+    
+    # Input stories
+    for i in range(num_stories):
+        print(f"Enter story {i+1}: ")
+        story = input()
+        stories.append(story)
+    
+    # Combine sentences from all stories
     sentences = []
     for story in stories:
         sentences += story.split('. ')
+    
+    # Randomize the sentences
     random.shuffle(sentences)
-    return '. '.join(sentences)
+    
+    # Output the combined randomized story
+    randomized_story = '. '.join(sentences)
+    print("\nRandomized Story:")
+    print(randomized_story)
 
-# Test the function
-story1 = "Once upon a time, in a land far far away, there lived a beautiful princess."
-story2 = "The prince was on a journey to find a potion that would make him immortal."
-story3 = "They met and fell in love, but the wicked witch was determined to keep them apart."
+# Run the function
+cut_up_machine()
 
-print(cut_up_machine(story1, story2, story3))
